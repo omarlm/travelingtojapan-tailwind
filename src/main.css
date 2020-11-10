@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#menu-toogle:check + #menu {
+    display: block;
+}

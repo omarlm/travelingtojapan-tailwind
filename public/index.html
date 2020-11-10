@@ -7,44 +7,56 @@
     <title>Traveling to Japan</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<header class="flex justify-around items-center bg-red-700 py-8">
+<header class="flex justify-between items-center sm:justify-end bg-red-700 py-8">
     <div class="px-4">
         <img class="h-8" src="/public/images/shopping-cart.svg" alt="Shopping Cart">
     </div>
-    <a href="#" class="hover:bg-gray-300 font-semibold">My Acount</a>
-    <div class="text-black-600">
-        <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-10 rounded-lg text-sm focus:outline-none"
-          type="search" name="search" placeholder="Search">
-      </div>
+    <a href="#" class="hover:bg-red-300 font-semibold px-4">My Acount</a>
+    <div class="text-black-600 px-4">
+        <input class="border-2 border-red-300 bg-white h-10 px-6 pr-10 rounded-lg text-sm focus:outline-none"
+            type="search" name="search" placeholder="Search">
+    </div>
 </header>
-<div class="flex items-end justify-between px-4 py-2">
+<div class="flex justify-between px-4 py-2">
     <div>
         <h1 class="sm:text-xl">Traveling</h1>
     </div>
     <div>
-        <button type="button" class="block text-gray-500 hover:text-green focus:text-green focus:outline-none">
+        <button type="button" class="sm:hidden block text-red-500 hover:text-green focus:text-green focus:outline-none">
             <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
                 <path fill-rule="evenodd"
                     d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
             </svg>
         </button>
     </div>
+    <div class="px-4 pt-2 pb-4 hidden sm:block">
+        <ul class="flex ">
+            <li class="mx-4"><a href="#"
+                    class="lg:p4 py-3 px-0 block border-b-2 border-transparent hover:boder-red-400">Home</a></li>
+            <li class="mx-4"><a href="#"
+                    class="lg:p4 py-3 px-0 block border-b-2 border-transparent hover:boder-red-400">Event</a></li>
+            <li class="mx-4"><a href="#"
+                    class="lg:p4 py-3 px-0 block border-b-2 border-transparent hover:boder-red-400">Accesories</a></li>
+            <li class="mx-4"><a href="#"
+                    class="lg:p4 py-3 px-0 block border-b-2 border-transparent hover:boder-red-400">Apparel</a></li>
+        </ul>
+    </div>
 </div>
-<!-- <div class="px-4 pt-2 pb-4">
-        <a href="#" class="block rounded hover:bg-gray-300 font-semibold">Home</a>
-        <a href="#" class="block rounded hover:bg-gray-300 font-semibold">Home</a>
-        <a href="#" class="block rounded hover:bg-gray-300 font-semibold">Home</a>
-        <a href="#" class="block rounded hover:bg-gray-300 font-semibold">Home</a>
-    </div> -->
+
+
+
+<div class="sm:mx-10 lg:mx-10 xl:mx-24">
+    <img class="hidden mx-auto sm:block w-auto" src="/public/images/pexels-aleksandar-pasaric-2303337.jpg" alt="japan">
+</div>
 <div class="px-4 pt-2 pb-4">
     <h2>Intro</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, ipsa itaque perferendis aut animi fugiat iure
         laborum, voluptate laboriosam sequi ut aspernatur maiores odio quam provident accusamus officiis velit?
-        Itaque.</p>
+        Itaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus molestias recusandae quasi ipsum accusamus. Quos qui ex, repudiandae mollitia doloremque tempora officia consequatur tenetur esse quam animi quas accusantium. Sequi. </p>
 </div>
 
 <div class="flex lg:-mx-4">
-    <div class="my-1 px-1 w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    <div class="px-4 w-1/2 md:w-1/4 lg:my-4 lg:px-4 lg:w-1/3 xl:mx-2 ">
         <article class="overflow-hidden rounded-lg shadow-lg">
             <a href="#">
                 <img alt="Placeholder" class="block h-auto w-full" src="images/pexels-donald-tong-115603.jpg">
@@ -66,7 +78,7 @@
             </footer>
         </article>
     </div>
-    <div class="my-1 px-1 w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    <div class="px-4 w-1/2 md:w-1/4 lg:my-4 lg:px-4 lg:w-1/3 xl:mx-2">
         <article class="overflow-hidden rounded-lg shadow-lg">
             <a href="#">
                 <img alt="Placeholder" class="block h-auto w-full" src="images/pexels-pixabay-46253.jpg">
@@ -89,10 +101,7 @@
             </footer>
         </article>
     </div>
-</div>
-
-<div class="flex lg:-mx-4">
-    <div class="my-1 px-1 w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    <div class="px-4 w-1/2 md:w-1/4 lg:my-4 lg:px-4 lg:w-1/3 xl:mx-2">
         <article class="overflow-hidden rounded-lg shadow-lg">
             <a href="#">
                 <img alt="Placeholder" class="block h-auto w-full" src="images/pexels-belle-co-402028.jpg">
@@ -100,7 +109,7 @@
             <header class="items-center leading-tight p-2 md:p-4">
                 <h1 class="text-lg">
                     <a class="no-underline hover:underline text-black" href="#">
-                      Köbe  
+                        Köbe
                     </a>
                 </h1>
                 <p class="text-gray-700 text-sm py-2">
@@ -114,7 +123,7 @@
             </footer>
         </article>
     </div>
-    <div class="my-1 px-1 w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    <div class="px-4 w-1/2 md:w-1/4 lg:my-4 lg:px-4 lg:w-1/3 xl:mx-2">
         <article class="overflow-hidden rounded-lg shadow-lg">
             <a href="#">
                 <img alt="Placeholder" class="block h-auto w-full" src="images/pexels-aleksandar-pasaric-1134166.jpg">
@@ -141,36 +150,32 @@
 
 <div class="w-full bg-red-800 mt-5">
     <div class="flex flex-wrap text-center text-white">
-  
-      <!-- ABOUT COLUMN -->
-  
-      <div class="w-full md:w-1/3 p-5 border-r border-red-800 md:text-left">
-        <div class="my-6 text-xl font-semibold">Quick Links</div>
+
+        <div class="w-full md:w-1/3 p-5 border-r border-red-800 md:text-left">
+            <div class="my-6 text-xl font-semibold">Quick Links</div>
             <a href="#" class="block rounded hover:bg-gray-300 font-semibold">Home</a>
             <a href="#" class="block rounded hover:bg-gray-300 font-semibold">Event</a>
             <a href="#" class="block rounded hover:bg-gray-300 font-semibold">Support</a>
             <a href="#" class="block rounded hover:bg-gray-300 font-semibold">Contact</a>
-      </div>
-  
-      <!-- CONTACTS COLUMN -->
-  
-      <div class="w-full md:w-1/3 p-5 border-r border-red-800">
-        <div class="my-6 text-xl font-semibold">Announcements / Promoted Content</div>
-        <p class="mt-8 text-gray-400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque doloribus laudantium eius hic perspiciatis, commodi reprehenderit voluptas veritatis, magni nisi reiciendis officiis. Voluptatem consectetur architecto eum veniam enim nobis.
-        </p>
-      </div>
-  
-      <!-- FORM COLUMN -->
-  
-      <div class="w-full md:w-1/3 p-5">
-        <div class="mt-6 text-xl font-semibold">Comming soon!</div>
-        <img src="images/pexels-pixabay-315191.jpg" alt="Comming soon">
-      </div>
+        </div>
+
+        <div class="w-full md:w-1/3 p-5 border-r border-red-800">
+            <div class="my-6 text-xl font-semibold">Announcements / Promoted Content</div>
+            <p class="mt-4 text-gray-400">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque doloribus laudantium eius hic
+                perspiciatis, commodi reprehenderit voluptas veritatis, magni nisi reiciendis officiis. Voluptatem
+                consectetur architecto eum veniam enim nobis.
+            </p>
+        </div>
+
+        <div class="w-full md:w-1/4 p-5">
+            <div class="mt-6 text-xl font-semibold">Comming soon!</div>
+            <img src="images/pexels-pixabay-315191.jpg" alt="Comming soon">
+        </div>
     </div>
-  </div>
+</div>
 
-
+<script src="/public/js/index.js"></script>
 </body>
 
 </html>
